@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node app",
-    "dev": "nodemon app"
+    "dev": "nodemon app",
+    "tailwind:build" : "npx tailwindcss -i ./src/public/styles/input.css -o ./src/public/dist/styles/output.css --watch"
   },
   "repository": {
     "type": "git",
