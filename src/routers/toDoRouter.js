@@ -1,5 +1,5 @@
 const router= require('express').Router();
-const {createToDo,default: toDoController} = require("../controllers/toDoController")
+const {createToDo, default: toDoController} = require("../controllers/toDoController")
 
 
 
@@ -11,12 +11,6 @@ router.route('/')
 })
 .post((req, res) => {
     createToDo(req, res)
-})
-.put((req, res) => {
-
-})
-.delete((req, res) => {
-
 })
 
 

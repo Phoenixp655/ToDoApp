@@ -2,7 +2,9 @@ const {Schema, default: mongoose} = require('mongoose');
 
 
 const toDoSchema = Schema({
-    name: String
+    name: String,
+    description: String,
+    status: {type: Boolean, default: 0}
 }, {timestamps: true});
 
 
