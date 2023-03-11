@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/dist/styles/output.css"/>
+    <title>ToDo Thing</title>
   </head>
   <body>
-    <%- include('homeMain')%>
+      <div class="h-full w-full p-4 bg-gray-200">
+          <div class="h-full max-w-lg bg-white rounded-lg drop-shadow-lg m-auto p-3 flex flex-col">
+            <div id="task-content" class="grow overflow-auto flex flex-col h-full gap-3">
+              
+            </div>
+            <div class="flex flex-row items-center">
+              <input type="text" class="w-full px-4 h-9 rounded-full mt-4" placeholder="Add Task...">
+              <i id="add-task" class="w-8 h-8 ml-3 mt-4" data-feather="plus-circle" width="32" height="32" color="rgb(124, 124, 124)" onclick="addTask()"></i>
+            </div>
+          </div>
+      </div>
+    <script src="../public/js/icon/feather.min.js"></script>                                    
+    <script>feather.replace()</script>
+    <script>
+      const addTask = async () => {
+        new Promise((res, rej) => {
+          res(document.getElementById('task-content').insertAdjacentHTML('afterbegin', `<div class="flex flex-row items-center relative h-9 rounded p-4 mx-1 bg-white drop-shadow-lg hover:bg-gray-200">
+                <label class="swap">
+                  <input type="checkbox">
+                  <i class="w-5 h-5 swap-off" data-feather="circle" width="20" height="20" color="rgb(124, 124, 124)"></i>
+                  <i class="w-5 h-5 swap-on" data-feather="check-circle" width="20" height="20" color="rgb(34, 139, 34)"></i>
+                </label>
+                <p class="ml-3">tet</p>
+              </div>`))
+        }).then(feather.replace())
+      }
+    </script>
   </body>
 </html>
