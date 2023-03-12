@@ -1,11 +1,11 @@
-const {Schema, default: mongoose} = require('mongoose');
+const {Schema, default: mongoose, Types} = require('mongoose');
 
 
 const toDoSchema = Schema({
     name: {type: String, default: null},
-    description: {type: String, default: null},
     status: {type: Boolean, default: 0},
-    dueDate: Date
+    tags: {type: String, default: null},
+    list: {type: Types.ObjectId, ref: "List"}
 }, {timestamps: true});
 
 

@@ -1,0 +1,155 @@
+<header class="hidden lg:block lg:col-span-2 h-full bg-gray-100 rounded-lg p-4">
+    <!-- header content -->
+    <div class="flex flex-col gap-4 justify-between h-full">
+        <!-- user info -->
+        <section class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center">
+                <div class="h-9 w-9">
+                    <img
+                        class="h-full w-full bg-gray-200 rounded-full"
+                        src=""
+                        alt="avata"
+                    />
+                </div>
+                <h2 class="ml-4">Username</h2>
+            </div>
+            <label class="swap swap-rotate">
+                <input type="checkbox" />
+                <i class="swap-off" data-feather="menu"></i>
+                <i class="swap-on" data-feather="menu"></i>
+            </label>
+        </section>
+        <!-- end user info -->
+        <!-- search field -->
+        <section class="flex flex-row items-center relative">
+            <input
+                type="text"
+                name="search"
+                id="search"
+                class="w-full h-9 rounded-lg pl-12 pr-3"
+                placeholder="Search"
+            />
+            <label for="search" class="absolute ml-3"
+                ><i
+                    class="w-5 w-5"
+                    data-feather="search"
+                    color=""
+                    width="20"
+                    height="20"
+                ></i
+            ></label>
+        </section>
+        <!-- end search field -->
+        <!-- tags list -->
+        <section>
+            <h3 class="pointer-events-none mb-3">Tags</h3>
+            <ul>
+                <li
+                    class="py-2 px-3 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between"
+                >
+                    <div class="flex felx-row items-center">
+                        <i
+                            class="w-4 h-4"
+                            data-feather="sun"
+                            width="16"
+                            height="16"
+                        ></i>
+                        <p class="ml-3 pointer-events-none">Today</p>
+                    </div>
+                    <div class="badge badge-sm pointer-events-none">0</div>
+                </li>
+                <li
+                    class="py-2 px-3 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between"
+                >
+                    <div class="flex felx-row items-center">
+                        <i
+                            class="w-4 h-4"
+                            data-feather="star"
+                            width="16"
+                            height="16"
+                        ></i>
+                        <p class="ml-3 pointer-events-none">Important</p>
+                    </div>
+                    <div class="badge badge-sm pointer-events-none">0</div>
+                </li>
+                <li
+                    class="py-2 px-3 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between"
+                >
+                    <div class="flex felx-row items-center">
+                        <i
+                            class="w-4 h-4"
+                            data-feather="columns"
+                            width="16"
+                            height="16"
+                        ></i>
+                        <p class="ml-3 pointer-events-none">Planned</p>
+                    </div>
+                    <div class="badge badge-sm pointer-events-none">0</div>
+                </li>
+                <li
+                    class="py-2 px-3 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between"
+                >
+                    <div class="flex felx-row items-center">
+                        <i
+                            class="w-4 h-4"
+                            data-feather="home"
+                            width="16"
+                            height="16"
+                        ></i>
+                        <p class="ml-3 pointer-events-none">Tasks</p>
+                    </div>
+                    <div class="badge badge-sm pointer-events-none">0</div>
+                </li>
+            </ul>
+        </section>
+        <!-- end tags list -->
+        <hr />
+        <!-- custom list -->
+        <section>
+            <h3 class="pointer-events-none mb-3">List</h3>
+            <ul class="h-52 overflow-y-auto">
+                <li
+                    class="py-2 px-3 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between"
+                >
+                    <div class="flex felx-row items-center">
+                        <i
+                            class="w-4 h-4"
+                            data-feather="list"
+                            width="16"
+                            height="16"
+                        ></i>
+                        <p class="ml-3 pointer-events-none">Demo</p>
+                    </div>
+                    <div class="badge badge-sm pointer-events-none">0</div>
+                </li>
+            </ul>
+        </section>
+        <!-- end custom list -->
+        <hr>
+        <!-- log out and setting -->
+        <section>
+            <div class="flex flex-col gap-4">
+                <div class="flex felx-row items-center">
+                    <i
+                        class="w-4 h-4"
+                        data-feather="settings"
+                        width="16"
+                        height="16"
+                    ></i>
+                    <p class="ml-3 pointer-events-none">Settings</p>
+                </div>
+                <div class="flex felx-row items-center">
+                    <i
+                        class="w-4 h-4"
+                        data-feather="log-out"
+                        width="16"
+                        height="16"
+                    ></i>
+                    <p class="ml-3 pointer-events-none">Sign out</p>
+                </div>
+            </div>
+        </section>
+        <!-- end log out and setting -->
+    </div>
+    <!-- end header content -->
+</header>
