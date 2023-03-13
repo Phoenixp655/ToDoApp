@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Phoenixp655/ToDoApp#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "daisyui": "^2.51.3",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
