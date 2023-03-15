@@ -20,7 +20,8 @@ app.use('/api/todo', require('./src/routers/toDoRouter'));
 
 //response caching header middleware for get request
 app.use((req, res, next) => {
-    const period = 60 * 5;
+    const period = 60 * 5; //perido time
+    //check if that is get method if true respone will caching by browser
     req.method == 'GET'
         ? res.set('Cache-control', `public, max-age=${period}`)
         : res.set('Cache-control', 'no-store');

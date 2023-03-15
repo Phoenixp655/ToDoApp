@@ -1,66 +1,71 @@
-<main class="col-span-12 lg:col-span-7 h-full px-4 pt-4 rounded-lg">
-    <section class="h-full flex flex-col justify-between">
-        <div class="flex flex-col gap-4 h-full">
-            <div class="flex flex-row items-center mb-6">
-                <div class="w-24[1] h-11 ">
-                    <h1 class="text-4xl font-bold">Today</h1>
-                </div>
-                <div
-                    class="border-2 px-3 border-gray-300 rounded-lg pointer-events-none text-2xl ml-8"
-                >
-                    0
-                </div>
-            </div>
-            <div class="relative flex flex-row items-center">
-                <input
-                    type="text"
-                    name="add-task"
-                    id="add-task"
-                    class="w-full h-11 rounded-lg pl-12 pr-3 shadow-md"
-                    placeholder="Add New Task"
-                />
-                <label for="add-task" class="absolute ml-3 left-0"
-                    ><i
-                        class="w-5 h-5"
-                        data-feather="plus"
-                        color=""
-                        width="20"
-                        height="20"
-                    ></i
-                ></label>
-            </div>
-            <section>
-                <ul class="overflow-y-auto h-[65vh]">
-                    <li
-                        class="py-2 pl-3 pr-1 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between my-2.5 mr-2.5"
+<main class="col-span-12 lg:col-span-10 h-full px-4 pt-4 rounded-lg">
+    <div class="grid grid-cols-12 h-full">
+        <section class="h-full flex flex-col justify-between col-span-8 pr-4">
+            <div class="flex flex-col gap-4 h-full">
+                <div class="flex flex-row items-center mb-6">
+                    <div class="w-24[1] h-11 ">
+                        <h1 class="text-4xl font-bold">Today</h1>
+                    </div>
+                    <div
+                        class="border-2 px-3 border-gray-300 rounded-lg pointer-events-none text-2xl ml-8"
                     >
-                        <div class="form-control">
-                            <label for="status" class="label cursor-pointer p-0">
-                                <input
-                                    type="checkbox"
-                                    name="status"
-                                    id="status"
-                                    class="checkbox checkbox-success border-gray-300"
-                                />
-                                <span class="label-text pointer-events-none ml-4"
-                                    >Demo</span
-                                >
-                            </label>
-                        </div>
-                        <i
+                        0
+                    </div>
+                </div>
+                <div class="relative flex flex-row items-center">
+                    <input
+                        type="text"
+                        name="add-task"
+                        id="add-task"
+                        class="w-full h-11 rounded-lg pl-12 pr-3 shadow-md"
+                        placeholder="Add New Task"
+                    />
+                    <label for="add-task" class="absolute ml-3 left-0"
+                        ><i
                             class="w-5 h-5"
-                            data-feather="chevron-right"
+                            data-feather="plus"
                             color=""
                             width="20"
                             height="20"
-                        ></i>
-                    </li>
-                    <li>
-                        <hr />
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <%- include('homeFooter') %>
-    </section>
+                        ></i
+                    ></label>
+                </div>
+                <section class="flex-grow">
+                    <ul class="overflow-y-auto h-[calc(80vh-100px)]">
+                        <li
+                            class="py-2 pl-3 pr-1 rounded-lg hover:bg-gray-200 flex flex-row items-center justify-between my-2.5 mr-2.5"
+                        >
+                            <div class="form-control">
+                                <label for="status" class="label cursor-pointer p-0">
+                                    <input
+                                        type="checkbox"
+                                        name="status"
+                                        id="status"
+                                        class="checkbox checkbox-success border-gray-300"
+                                    />
+                                    <span class="label-text pointer-events-none ml-4"
+                                        >Demo</span
+                                    >
+                                </label>
+                            </div>
+                            <i
+                                class="w-5 h-5"
+                                data-feather="chevron-right"
+                                color=""
+                                width="20"
+                                height="20"
+                            ></i>
+                        </li>
+                        <li>
+                            <hr />
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <%- include('homeFooter') %>
+        </section>
+        <section class="col-span-4 h-full bg-gray-100 rounded-lg">
+        
+        </section>
+    </div>
 </main>
